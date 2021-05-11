@@ -1,5 +1,5 @@
 # Cloned and build from erlang image build for arm processors.
-FROM bitwalker/alpine-elixir:latest
+FROM hexpm/elixir:1.10.2-erlang-22.2.8-alpine-3.11.3
 MAINTAINER Tim Beeren <tim.beerenn<at>gmail.com>
 
 WORKDIR /tmp/elixir-build
