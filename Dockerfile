@@ -1,5 +1,5 @@
 # Cloned and build from erlang image build for arm processors.
-FROM joakimk/rpi-erlang:20.2.2
+FROM bitwalker/alpine-elixir:latest
 MAINTAINER Tim Beeren <tim.beerenn<at>gmail.com>
 
 WORKDIR /tmp/elixir-build
@@ -10,7 +10,7 @@ RUN \
     make && \
     apk add --no-cache --update \
     git && \
-    git clone https://github.com/elixir-lang/elixir --depth 1 --branch v1.11.4 && \
+    git clone https://github.com/elixir-lang/elixir --depth 1 --branch v1.11.0 && \
     cd elixir && \
     make && make install && \
     mix local.hex --force && \
