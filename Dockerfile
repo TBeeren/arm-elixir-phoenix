@@ -10,7 +10,7 @@ RUN \
     make && \
     apk add --no-cache --update \
     git && \
-    git clone https://github.com/elixir-lang/elixir --depth 1 --branch v1.11.0 && \
+    git clone https://github.com/elixir-lang/elixir --depth 1 --branch v1.11.4 && \
     cd elixir && \
     make && make install && \
     mix local.hex --force && \
