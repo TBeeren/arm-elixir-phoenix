@@ -19,6 +19,6 @@ RUN \
     rm -rf /tmp/elixir-build && \
     apk del .elixir-build
 
-WORKDIR ${HOME}
+WORKDIR /
 
 CMD ["/bin/sh"]
